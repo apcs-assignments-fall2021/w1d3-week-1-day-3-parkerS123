@@ -8,7 +8,16 @@ public class MyMain {
     // Given three ints x, y, and z, this method
     // returns the largest of the three numbers
     public static int findBiggestNumber(int x, int y, int z) {
-        // REPLACE THIS WITH YOUR CODE
+        if(x>y && x>z) {
+            System.out.println(x + " is the biggest");
+        }
+        else if(y>x && y>z) {
+            System.out.println(y + " is the biggest");
+        }
+        else {
+            System.out.println(z + " is the biggest");
+        }
+
         return 0;
     }
 
@@ -16,8 +25,14 @@ public class MyMain {
     // true represents "heads" and false represents "tails"
     // This method should return true half the time, and false the other half
     public static boolean flipCoin() {
-        // REPLACE THIS WITH YOUR CODE
-        return false;
+        double rand = Math.random();
+        if (rand >= 0.5) {
+            return false;
+        }
+        else {
+            return true;
+            {
+        }
     }
 
     // This method simulates the flip of a weighted coin,
@@ -50,6 +65,8 @@ public class MyMain {
         int y = add5(x);
         System.out.println(y);
 
-        // YOUR CODE HERE
+        System.out.println(findBiggestNumber(15,8,1));
+        flipCoin();
+
     }
 }
